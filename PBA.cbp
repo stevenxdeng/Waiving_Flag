@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PBA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PBA" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="D:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PBA" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="D:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/Program Files (x86)/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="D:/Program Files (x86)/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="include/Area.h" />
+		<Unit filename="include/Bendable.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Edge.h" />
+		<Unit filename="include/GlobePoint.h" />
+		<Unit filename="include/Math_Matrix.h" />
+		<Unit filename="include/Particle.h" />
+		<Unit filename="include/Triangle.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Area.cpp" />
+		<Unit filename="src/Bendable.cpp" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Edge.cpp" />
+		<Unit filename="src/GlobePoint.cpp" />
+		<Unit filename="src/Math_Matrix.cpp" />
+		<Unit filename="src/Particle.cpp" />
+		<Unit filename="src/Triangle.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
